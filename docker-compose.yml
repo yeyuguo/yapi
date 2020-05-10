@@ -9,8 +9,8 @@ services:
       - LOG_PATH=/tmp/yapi.log
       - HOME=/home
       - PORT=3000
-      - ADMIN_EMAIL=me@jinfeijie.cn
-      - DB_SERVER=mongo
+      - ADMIN_EMAIL=346243440@qq.com
+      - DB_SERVER=mongo   
       - DB_NAME=yapi
       - DB_PORT=27017
     # restart: always
@@ -24,7 +24,7 @@ services:
     networks:
       - back-net
   mongo:
-    image: mongo
+    image: mongo:3.4
     container_name: mongo
     # restart: always
     ports:
